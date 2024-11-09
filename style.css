@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+button{
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    padding: 5px 10px;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #636262;
+    transition: background-color 0.3s;
+}
+
+footer > img{
+    width: 20%;
+    height: auto;
+}
+
+.headline {
+    background: url('backgroundgif.gif') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    font-style: bold;
+}
+
+.headline h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.headline::after{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    padding: 40px 3rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin: 6px 5px;
+    padding: 16px;
+    width: calc(33% - 40px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /*background-image: url(https://giffiles.alphacoders.com/218/218739.gif);*/
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #ffffff;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.text{
+    max-width: 35%;
+    margin: 30px;
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    float: left;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    line-height: 1.4;
+    transition: transform 0.3s;
+}
+
+.text:hover{
+    transform: scale(1.05);
+}
+.game {
+    margin: 6px 5px;
+    padding: 10px 20px ;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 20rem;
+    font-size: small;
+    line-height: 20px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+.news{
+    max-width: 35%;
+    margin: 30px;
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    float: right;
+    line-height: 1.4;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.news:hover{
+    transform: scale(1.05);
+}
+.newsgame{
+    font-weight: bolder;
+}
+.displayflex{
+    display: flex;
+}
+.headline2{
+    align-content: center;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+}
+.invislink{
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.breathing-text {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: breathe 10s infinite ease-in-out;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
